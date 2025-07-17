@@ -1,0 +1,48 @@
+name: Django Test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:14
+        env:
+          POSTGRES_DB: loyha_db
+          POSTGRES_USER: loyha_admin
+          POSTGRES_PASSWORD: root
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd="pg_isready"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
+    env:
+      SECRET_KEY: ${{ secrets.SECRET_KEY }}
+      STRIPE_PUBLIC_KEY: ${{ secrets.STRIPE_PUBLIC_KEY }}
+      STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      DB_NAME: loyha_db
+      DB_USER: loyha_admin
+      DB_PASSWORD: root
+      DB_HOST: localhost
+      DB_PORT: 5432
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.12
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.12
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    - name: Run tests
+      run: python manage.py test

@@ -71,8 +71,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\loyha-v2\billing" />
       <recent name="D:\loyha-v2" />
+      <recent name="D:\loyha-v2\billing" />
       <recent name="D:\loyha-v2\order" />
       <recent name="D:\loyha-v2\product" />
       <recent name="D:\loyha-v2\account" />
@@ -122,7 +122,7 @@
       <workItem from="1752730091555" duration="3399000" />
       <workItem from="1752735481900" duration="678000" />
       <workItem from="1752752296934" duration="746000" />
-      <workItem from="1752753486253" duration="2425000" />
+      <workItem from="1752753486253" duration="2888000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />

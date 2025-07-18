@@ -21,7 +21,6 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="PATH_TO_GIT" value="D:\loyha-v2\.gitignore" />
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
         <option value="DiyorbekY &lt;diyorbekyoldoshev846@gmail.com&gt;" />
@@ -65,7 +64,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "settings.editor.selected.configurable": "vcs.Git",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -122,7 +121,8 @@
       <workItem from="1752730091555" duration="3399000" />
       <workItem from="1752735481900" duration="678000" />
       <workItem from="1752752296934" duration="746000" />
-      <workItem from="1752753486253" duration="4977000" />
+      <workItem from="1752753486253" duration="6076000" />
+      <workItem from="1752807865710" duration="1064000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />

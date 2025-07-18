@@ -34,7 +34,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*',"www.softdev.com.uz","softdev.com.uz"]
+ALLOWED_HOSTS = ['softdev.com.uz', 'www.softdev.com.uz', '13.49.243.90','*']
 
 
 # Application definition
